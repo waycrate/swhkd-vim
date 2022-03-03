@@ -28,4 +28,7 @@ call dein#add('waycrate/swhkd-vim')
 
 " NeoBundle
 NeoBundle 'waycrate/swhkd-vim'
+
+" minpac
+call minpac#add('waycrate/swhkd-vim') 
 ```

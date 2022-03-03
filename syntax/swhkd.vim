@@ -4,7 +4,7 @@ endif
 
 let b:current_syntax = "swhkd"
 
-syn match swhkd_binding "\v^.*$" contains=swhkd_on_release,swhkd_binding_pass,swhkd_inline_comment
+syn match swhkd_binding "\v^.*$" contains=swhkd_on_release,swhkd_binding_pass,swhkd_inline_comment,modifier
 syn match swhkd_on_release "\v^\@" contained
 syn match swhkd_binding_pass "\v^\~" contained
 syn match swhkd_exec "\v^\s+.*" contains=@swhkd_shell
@@ -12,12 +12,20 @@ syn match swhkd_comment "\v#.*$"
 syn region swhkd_inline_comment start="#" end="$" contained
 syn match swhkd_import_path "\v(<use>|<import>|<include>|<source>).*" contains=swhkd_import
 
-syn keyword swhkd_import
+syn keyword swhkd_import contained
     \ use
     \ import
     \ include
-    \ source contained
+    \ source
 
+syn keyword modifier contained
+    \ ctrl
+    \ control
+    \ super
+    \ mod4
+    \ alt
+    \ mod1
+    \ shift
 
 hi link swhkd_comment Comment
 hi link swhkd_inline_comment Comment
@@ -27,6 +35,7 @@ hi link swhkd_binding_pass Constant
 hi link swhkd_exec Macro
 hi link swhkd_import_path String
 hi link swhkd_import Include
+hi link modifier Type
 
 " match shell command
 let s:current_syntax = b:current_syntax

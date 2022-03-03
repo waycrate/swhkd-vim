@@ -32,3 +32,6 @@ NeoBundle 'waycrate/swhkd-vim'
 " minpac
 call minpac#add('waycrate/swhkd-vim') 
 ```
+
+![swhkd-vim example image](https://user-images.githubusercontent.com/39676098/156572456-9c5baf46-bee8-49d4-9c09-e6e75ea650ef.png)
+

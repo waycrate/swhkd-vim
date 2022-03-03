@@ -14,3 +14,5 @@ setlocal com=sO:#\ -,mO:#\ \ ,b:#
 
 " Set 'commentstring' to put the marker after a #.
 setlocal commentstring=#\ %s
+
+setlocal iskeyword+=+,{,}

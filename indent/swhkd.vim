@@ -4,14 +4,14 @@ endif
 
 let b:did_indent = 1
 
-setlocal indentexpr=GetIndentSXHKD()
+setlocal indentexpr=GetIndentSWHKD()
 
 " Only define the function once:
-if exists("*GetIndentSXHKD")
+if exists("*GetIndentSWHKD")
   finish
 endif
 
-function GetIndentSXHKD()
+function GetIndentSWHKD()
 	" Find a non-blank line above the current line:
 	let lnum = prevnonblank(v:lnum - 1)
 

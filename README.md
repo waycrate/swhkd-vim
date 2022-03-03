@@ -1,12 +1,31 @@
-# sxhkd-vim
+# swhkd-vim
 
-Vim stuff for indent, highlight syntax and detect [sxhkd - Simple X hotkey
-daemon](https://github.com/baskerville/sxhkd) configuration files.
+Vim / Neovim plugin to indent, highlight syntax and detect
+[swhkd](https://github.com/waycrate/swhkd) configuration files.
+
+swhkd files detected by this plugin are `swhkdrc` and files
+with the `.swhkd` file extension.
 
 ## Installation
 
+For [vim-plug](https://github.com/junegunn/vim-plug) users:
+
 ```vim
-Plug 'kovetskiy/sxhkd-vim'
+" vim-plug
+Plug 'waycrate/swhkd-vim'
 ```
 
-![example](http://i.imgur.com/GPlm3DO.png)
+in your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
+
+Other plugin managers:
+
+```vim
+" packer.nvim
+use 'waycrate/swhkd-vim'
+
+" dein.vim
+call dein#add('waycrate/swhkd-vim')
+
+" NeoBundle
+NeoBundle 'waycrate/swhkd-vim'
+```

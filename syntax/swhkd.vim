@@ -10,7 +10,7 @@ syn match swhkd_binding_pass "\v^\~" contained
 syn match swhkd_exec "\v^\s+.*" contains=@swhkd_shell
 syn match swhkd_comment "\v#.*$"
 syn region swhkd_inline_comment start="#" end="$" contained
-syn match swhkd_import_path "\v(<use>|<import>|<include>|<source>).*" contains=swhkd_import
+syn match swhkd_import_path "\v^<include>.*" contains=swhkd_import
 
 syn keyword swhkd_import contained
     \ use

@@ -17,19 +17,14 @@ plug 'waycrate/swhkd-vim'
 
 In your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
 
-If you happen to be using [AstroNvim](https://astronvim.com/) then follow the following steps:
-
-1. Navigate to `$HOME/.config/astronvim/lua/plugins`
-2. Open `core.lua`
-3. Paste `{"waycrate/swhkd-vim", lazy = true}` into the file inside the `return {...}` block.
-4. Simply quit your session and enter `AstroNvim` again, `Mason` will automatically install `swhkd-vim` plugin for you.
-
-
 Other plugin managers:
 
 ```vim
 " packer.nvim
 use 'waycrate/swhkd-vim'
+
+" lazy
+{ "waycrate/swhkd-vim", lazy = true }
 
 " dein.vim
 call dein#add('waycrate/swhkd-vim')

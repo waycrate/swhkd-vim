@@ -12,10 +12,18 @@ For [vim-plug](https://github.com/junegunn/vim-plug) users:
 
 ```vim
 " vim-plug
-Plug 'waycrate/swhkd-vim'
+plug 'waycrate/swhkd-vim'
 ```
 
-in your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
+In your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
+
+If you happen to be using [AstroNvim](https://astronvim.com/) then follow the following steps:
+
+1. Navigate to `$HOME/.config/astronvim/lua/plugins`
+2. Open `core.lua`
+3. Paste `{"waycrate/swhkd-vim", lazy = true}` into the file inside the `return {...}` block.
+4. Simply quit your session and enter `AstroNvim` again, `Mason` will automatically install `swhkd-vim` plugin for you.
+
 
 Other plugin managers:
 

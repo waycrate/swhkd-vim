@@ -12,16 +12,19 @@ For [vim-plug](https://github.com/junegunn/vim-plug) users:
 
 ```vim
 " vim-plug
-Plug 'waycrate/swhkd-vim'
+plug 'waycrate/swhkd-vim'
 ```
 
-in your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
+In your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
 
 Other plugin managers:
 
 ```vim
 " packer.nvim
 use 'waycrate/swhkd-vim'
+
+" lazy
+{ "waycrate/swhkd-vim", lazy = true }
 
 " dein.vim
 call dein#add('waycrate/swhkd-vim')
